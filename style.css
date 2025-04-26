@@ -155,7 +155,19 @@ section h2 {
   border-radius: 15px;
 }
 
+/* English (LTR): align About text to the right */
+html[dir="ltr"] .about-text {
+    text-align: left;
+  }
+  
+  /* Hebrew (RTL): align About text to the left */
+  html[dir="rtl"] .about-text {
+    text-align: right;
+  }
+
+
 .about-text h1 {
+    text-align: center;
   font-size: 2.5em;
   margin-bottom: 0.5em;
 }
@@ -167,9 +179,27 @@ section h2 {
 }
 
 
+
 /* ==========================
    Contact Form
    ========================== */
+
+   /* make labels full-width so text-align works */
+.contact-form label {
+    display: block;
+    width: 100%;
+  }
+  
+  /* English (LTR): labels on the right */
+  html[dir="ltr"] .contact-form label {
+    text-align: left;
+  }
+  
+  /* Hebrew (RTL): labels on the left */
+  html[dir="rtl"] .contact-form label {
+    text-align: right;
+  }
+  
 .contact-form input,
 .contact-form textarea {
   width: 100%;

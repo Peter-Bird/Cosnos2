@@ -1,11 +1,11 @@
 const translations = {
     en: {
-        navAbout: "About",
+        navAbout: "Home",
         navServices: "Services",
         navSolutions: "Solutions",
         navResources: "Resources",
         navContact: "Contact",
-        aboutTitle: "About Cosnos",
+        aboutTitle: "Cosnos",
         aboutText: "<span class='star'>*</span><strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial expertise to support established startups. We offer executive consulting services, custom software solutions, and tailored AI integration based on each organization’s unique needs.",
         servicesTitle: "Our Services",
         servicesText: "Detail your consulting and software offerings here.",
@@ -21,13 +21,13 @@ const translations = {
         submitButton: "Send Message"
     },
     he: {
-        navAbout: "על קוסנוס",
+        navAbout: "קוסנוס",
         navServices: "השירותים שלנו",
         navSolutions: "פתרונות",
         navResources: "משאבים",
         navContact: "צור קשר",
-        aboutTitle: "על COSNOS",
-        aboutText: "<span class='star'>*</span><strong>COSNOS</strong> היא חברת ייעוץ בוטיק שמשלבת מומחיות טכנולוגית וניהולית לתמיכה בסטארט-אפים בשלים. אנו מציעים שירותי ייעוץ ניהולי, פתרונות תוכנה בהתאמה אישית ואינטגרציית AI מותאמת לצרכי הארגון.",
+        aboutTitle: "אודות קוסנוס",
+        aboutText: "<span class='star'>*</span><strong>קוסנוס</strong> היא חברת ייעוץ בוטיק שמשלבת מומחיות טכנולוגית וניהולית לתמיכה בסטארט-אפים בשלים. אנו מציעים שירותי ייעוץ ניהולי, פתרונות תוכנה בהתאמה אישית ואינטגרציית AI מותאמת לצרכי הארגון.",
         servicesTitle: "השירותים שלנו",
         servicesText: "פרט כאן את שירותי הייעוץ והתוכנה שלך.",
         solutionsTitle: "פתרונות",
