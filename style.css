@@ -111,6 +111,14 @@ body {
     margin-bottom: 0.75em; /* space between items */
   }
 
+  html[dir="ltr"] .services-list {
+    text-align: left;
+  }
+  
+  html[dir="rtl"] .services-list {
+    text-align: right;
+  }
+
   /* ==========================
    Sticky Footer
    ========================== */

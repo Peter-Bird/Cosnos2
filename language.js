@@ -19,6 +19,14 @@ const translations = {
         labelEmail: "Email",
         labelMessage: "Message",
         submitButton: "Send Message",
+        servicesList: `
+        <li>🎯 Striving for excellence in everything we do</li>
+        <li>🔍 Deep understanding and analysis of complex systems - from high-level architecture to the smallest details</li>
+        <li>💡 Integration of new technologies into existing systems</li>
+        <li>🧠 Out-of-the-box thinking</li>
+        <li>🤖 Utilization of AI as part of the work process</li>
+        <li>🛡️ Analysis of vulnerabilities and provision of solutions</li>
+      `,
         footerText: "© 2024 COSNOS. All rights reserved."
     },
     he: {
@@ -41,6 +49,14 @@ const translations = {
         labelEmail: "דוא\"ל",      // Hebrew for email
         labelMessage: "הודעה",
         submitButton: "שלח הודעה",
+        servicesList: `
+        <li>🎯 שאיפה למצוינות בכל דבר שאנו עושים</li>
+        <li>🔍 הבנה וניתוח מעמיק של מערכות מורכבות – מהארכיטקטורה ברמה גבוהה ועד לפרטים הקטנים ביותר</li>
+        <li>💡 הטמעת טכנולוגיות חדשות במערכות קיימות</li>
+        <li>🧠 חשיבה מחוץ לקופסה</li>
+        <li>🤖 שימוש בבינה מלאכותית כחלק מתהליך העבודה</li>
+        <li>🛡️ ניתוח פרצות אבטחה והצעת פתרונות</li>
+      `,
         footerText: "כל הזכויות שמורות © 2024 COSNOS "
     }
 };
