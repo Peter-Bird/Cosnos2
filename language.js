@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', () => {
         const newLang = document.documentElement.lang === 'en' ? 'he' : 'en';
         switchLang(newLang);
-        toggle.textContent = newLang === 'en' ? '🇬🇧' : '🇮🇱';
+        toggle.textContent = newLang === 'en' ?  '🇮🇱' : '🇬🇧';
         toggle.setAttribute(
             'aria-label',
             newLang === 'en'

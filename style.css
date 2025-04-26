@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  background: url('earth.jpg') no-repeat center center fixed;
+  background: url('images/earth.jpg') no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
@@ -39,22 +39,20 @@ body {
   flex-direction: row-reverse;      /* reverse so nav-items & logo swap ends */
   justify-content: space-between;  /* one at each end */
   align-items: center;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
   background: rgba(0,0,0,0.8);
 }
 
-.logo {
-  /* now static inside navbar */
-}
 
 .logo img {
-  height: 60px;
+  height: 50px;
   display: block;
+  margin-right: 1.5em;
 }
 
 .navbar a {
-  margin: 0 0.5em;
-  padding: 0.5em 1.2em;
+  margin: 0 0.25em;
+  padding: 0.4em 0.8em;
   background: rgba(255,255,255,0.7);
   color: #000;
   text-decoration: none;
