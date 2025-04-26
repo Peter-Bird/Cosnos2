@@ -18,7 +18,8 @@ const translations = {
         labelName: "Name",
         labelEmail: "Email",
         labelMessage: "Message",
-        submitButton: "Send Message"
+        submitButton: "Send Message",
+        footerText: "© 2024 COSNOS. All rights reserved."
     },
     he: {
         navAbout: "קוסנוס",
@@ -40,6 +41,7 @@ const translations = {
         labelEmail: "דוא\"ל",      // Hebrew for email
         labelMessage: "הודעה",
         submitButton: "שלח הודעה",
+        footerText: "כל הזכויות שמורות © 2024 COSNOS "
     }
 };
 
