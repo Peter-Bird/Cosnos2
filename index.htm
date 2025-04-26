@@ -1,92 +1,102 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COSNOS – Grow Beyond Stars</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="./images/earth.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSNOS – Grow Beyond Stars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/earth.ico" type="image/x-icon">
 
-  <script defer src="language.js"></script>
+    <script defer src="language.js"></script>
 </head>
+
 <body>
-  <div class="overlay"></div>
+    <div class="overlay"></div>
 
-  <nav class="navbar">
-    <div class="logo">
-      <img src="./images/logo.png" alt="COSNOS Logo">
-    </div>
-    <div class="nav-items">
-      <a href="#about" data-key="navAbout">Home</a>
-      <a href="#services" data-key="navServices">Services</a>
-      <a href="#solutions" data-key="navSolutions">Solutions</a>
-      <a href="#resources" data-key="navResources">Resources</a>
-      <a href="#contact" data-key="navContact">Contact</a>
-      <button id="lang-toggle" type="button" class="lang-btn" aria-label="Switch to Hebrew">🇮🇱</button>
-    </div>
-  </nav>
-
-  <section id="about" class="about-section">
-    <div class="about-text">
-      <h1 data-key="aboutTitle">Cosnos</h1>
-      <p data-key="aboutText">
-        <span class="star">*</span>
-        <strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial expertise to support established startups. We offer executive consulting services, custom software solutions, and tailored AI integration based on each organization’s unique needs.
-      </p>
-    </div>
-  </section>
-
-  <section id="services" class="main-section">
-    <div class="about-text">
-      <h2 data-key="servicesTitle">Our Services</h2>
-      <ul class="services-list" data-key="servicesList">
-        <li>🎯 Striving for excellence in everything we do</li>
-        <li>🔍 Deep understanding and analysis of complex systems - from high-level architecture to the smallest details</li>
-        <li>💡 Integration of new technologies into existing systems</li>
-        <li>🧠 Out-of-the-box thinking</li>
-        <li>🤖 Utilization of AI as part of the work process</li>
-        <li>🛡️ Analysis of vulnerabilities and provision of solutions</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="solutions" class="main-section">
-    <div class="about-text">
-      <h2 data-key="solutionsTitle">Solutions</h2>
-      <p data-key="solutionsText">Case studies, frameworks, methodologies…</p>
-    </div>
-  </section>
-
-  <section id="resources" class="main-section">
-    <div class="about-text">
-      <h2 data-key="resourcesTitle">Resources</h2>
-      <p data-key="resourcesText">Whitepapers, blog posts, webinars, etc.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="main-section">
-    <div class="about-text">
-      <h2 data-key="contactTitle">Contact Us</h2>
-      <p data-key="contactText">Contact form or your email / phone information.</p>
-      <form class="contact-form" action="#" method="post">
-        <div class="form-group">
-          <label for="name" data-key="labelName">Name</label>
-          <input type="text" id="name" name="name" required>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" alt="COSNOS Logo">
         </div>
-        <div class="form-group">
-          <label for="email" data-key="labelEmail">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message" data-key="labelMessage">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn" data-key="submitButton">Send Message</button>
-      </form>
-    </div>
-  </section>
 
-  <!-- Sticky Footer -->
-  <footer class="footer" data-key="footerText">© 2024 COSNOS. All rights reserved.</footer>
+        <!-- Hamburger toggle, initially hidden on desktop -->
+        <button id="menu-toggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+
+        <div class="nav-items">
+            <a href="#about" data-key="navAbout">Home</a>
+            <a href="#services" data-key="navServices">Services</a>
+            <a href="#solutions" data-key="navSolutions">Solutions</a>
+            <a href="#resources" data-key="navResources">Resources</a>
+            <a href="#contact" data-key="navContact">Contact</a>
+            <button id="lang-toggle" type="button" class="lang-btn" aria-label="Switch to Hebrew">🇮🇱</button>
+        </div>
+    </nav>
+
+    <section id="about" class="about-section">
+        <div class="about-text">
+            <h1 data-key="aboutTitle">Cosnos</h1>
+            <p data-key="aboutText">
+                <span class="star">*</span>
+                <strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial
+                expertise to support established startups. We offer executive consulting services, custom software
+                solutions, and tailored AI integration based on each organization’s unique needs.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="main-section">
+        <div class="about-text">
+            <h2 data-key="servicesTitle">Our Services</h2>
+            <ul class="services-list" data-key="servicesList">
+                <li>🎯 Striving for excellence in everything we do</li>
+                <li>🔍 Deep understanding and analysis of complex systems - from high-level architecture to the smallest
+                    details</li>
+                <li>💡 Integration of new technologies into existing systems</li>
+                <li>🧠 Out-of-the-box thinking</li>
+                <li>🤖 Utilization of AI as part of the work process</li>
+                <li>🛡️ Analysis of vulnerabilities and provision of solutions</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="solutions" class="main-section">
+        <div class="about-text">
+            <h2 data-key="solutionsTitle">Solutions</h2>
+            <p data-key="solutionsText">Case studies, frameworks, methodologies…</p>
+        </div>
+    </section>
+
+    <section id="resources" class="main-section">
+        <div class="about-text">
+            <h2 data-key="resourcesTitle">Resources</h2>
+            <p data-key="resourcesText">Whitepapers, blog posts, webinars, etc.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="main-section">
+        <div class="about-text">
+            <h2 data-key="contactTitle">Contact Us</h2>
+            <p data-key="contactText">Contact form or your email / phone information.</p>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name" data-key="labelName">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-key="labelEmail">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-key="labelMessage">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" data-key="submitButton">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sticky Footer -->
+    <footer class="footer" data-key="footerText">© 2024 COSNOS. All rights reserved.</footer>
 </body>
+
 </html>
