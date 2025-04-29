@@ -184,7 +184,8 @@ section h2 {
    About / Hero Section
    ========================== */
 .about-text {
-    max-width: 700px;
+    max-width: 600px;
+    font-size: 3.5em;
     background: rgba(0, 0, 0, 0.6);
     padding: 2em;
     border-radius: 15px;
