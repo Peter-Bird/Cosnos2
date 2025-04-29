@@ -30,12 +30,12 @@ const translations = {
         footerText: "© 2024 COSNOS. All rights reserved."
     },
     he: {
-        navAbout: "קוסנוס",
+        navAbout: "COSNOS",
         navServices: "השירותים שלנו",
         navSolutions: "פתרונות",
         navResources: "משאבים",
         navContact: "צור קשר",
-        aboutTitle: "אודות קוסנוס",
+        aboutTitle: "אודות COSNOS",
         aboutText: "<span class='star'>*</span><strong>קוסנוס</strong> היא חברת ייעוץ בוטיק שמשלבת מומחיות טכנולוגית וניהולית לתמיכה בסטארט-אפים בשלים. אנו מציעים שירותי ייעוץ ניהולי, פתרונות תוכנה בהתאמה אישית ואינטגרציית AI מותאמת לצרכי הארגון.",
         servicesTitle: "השירותים שלנו",
         servicesText: "פרט כאן את שירותי הייעוץ והתוכנה שלך.",
