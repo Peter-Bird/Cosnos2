@@ -15,7 +15,7 @@ body {
 }
 
 body {
-    background: url('images/Cosnos_MainPage.png') no-repeat center center fixed;
+    background: url('images/Cosnos_MainPage.png') no-repeat center top fixed;
     background-size: cover;
     position: relative;
 }
@@ -80,9 +80,9 @@ html[dir="rtl"] .logo {
 }
 
 
-/* Slim down or “un-button” the language toggle */
+/*/* Slim down or “un-button” the language toggle */
 .lang-btn {
-    font-size: 0.9em;
+    font-size: 1.1em;
     /* make the emoji smaller */
     background: none;
     /* remove the pill background */
@@ -93,8 +93,11 @@ html[dir="rtl"] .logo {
     margin-inline-start: 0.5em;
     cursor: pointer;
     transition: transform 0.2s;
+    color: #e0d77a; /* ensure it's visible */
     /* optional hover effect */
-}
+} 
+
+
 
 .lang-btn:hover {
     transform: scale(1.3);
@@ -114,6 +117,7 @@ html[dir="rtl"] .logo {
     /* spacing above/below */
     text-align: left;
     /* left-align the list */
+    width : 100%;
 }
 
 .services-list li {
@@ -184,19 +188,24 @@ section h2 {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Move content to the right */
+   /* align-items: flex-end; /* Move content to the right */ 
     justify-content: center;
-    text-align: right;
-    padding: 5em 2em;
-    min-height: 100vh;
+    text-align : center;
+    padding: 2em 2em;
+    /*min-height: 100vh; */
     box-sizing: border-box;
     color: #e0d77a;
     margin-top: 50px;
+    text-transform: uppercase;
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0 auto;
+
+    
 }
 
 
 .about-text {
-    max-width: 600px;
+    max-width: 1200px;
     font-size: 1.5em;
     background: rgba(0, 0, 0, 0.6);
     padding: 2em;
@@ -205,7 +214,7 @@ section h2 {
 
 /* English (LTR): align About text to the right */
 html[dir="ltr"] .about-text {
-    text-align: left;
+    text-align: center;
 }
 
 /* Hebrew (RTL): align About text to the left */
