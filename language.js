@@ -20,12 +20,11 @@ const translations = {
         labelMessage: "Message",
         submitButton: "Send Message",
         servicesList: `
-        <li>🎯 Striving for excellence in everything we do</li>
-        <li>🔍 Deep understanding and analysis of complex systems - from high-level architecture to the smallest details</li>
-        <li>💡 Integration of new technologies into existing systems</li>
-        <li>🧠 Out-of-the-box thinking</li>
-        <li>🤖 Utilization of AI as part of the work process</li>
-        <li>🛡️ Analysis of vulnerabilities and provision of solutions</li>
+        <li>🎯 Consult Startups - in growth process </li>
+                <li>🤖 Develop AI solutions tailored to customer needs </li>
+                <li>💡 Analyze and Improve Software Architecture   </li>
+                <li>🧠 Personal guidance throughout the improvement process </li>
+                <li>🛡️ Analysis of vulnerabilities and provision of solutions</li>
       `,
         footerText: "© 2024 COSNOS. All rights reserved."
     },
