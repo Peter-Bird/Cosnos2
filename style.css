@@ -15,7 +15,7 @@ body {
 }
 
 body {
-    background: url('images/Cosnos_MainPage.png') no-repeat center center fixed;
+    background: url('images/Cosnos_MainPage.png') no-repeat center top fixed;
     background-size: cover;
     position: relative;
 }
@@ -80,9 +80,9 @@ html[dir="rtl"] .logo {
 }
 
 
-/* Slim down or “un-button” the language toggle */
+/*/* Slim down or “un-button” the language toggle */
 .lang-btn {
-    font-size: 0.9em;
+    font-size: 1.1em;
     /* make the emoji smaller */
     background: none;
     /* remove the pill background */
@@ -93,8 +93,11 @@ html[dir="rtl"] .logo {
     margin-inline-start: 0.5em;
     cursor: pointer;
     transition: transform 0.2s;
+    color: #e0d77a; /* ensure it's visible */
     /* optional hover effect */
-}
+} 
+
+
 
 .lang-btn:hover {
     transform: scale(1.3);
