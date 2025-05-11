@@ -10,8 +10,15 @@ body {
     color: #e0d77a;
     scroll-behavior: smooth;
     /* smooth anchor scrolling */
-    padding-top: 80px;
+    padding-top: 0;
     /* offset for fixed navbar */
+    overflow: hidden;
+    font-family: 'Comic Sans MS', cursive;
+    text-transform: uppercase;
+
+    
+
+
 }
 
 body {
@@ -19,7 +26,11 @@ body {
     background-size: cover;
     position: relative;
 }
-
+#fullpage-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
 
 
 /* ==========================
@@ -56,7 +67,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     border-radius: 50px;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
 .navbar a:hover {
@@ -117,10 +128,12 @@ html[dir="rtl"] .logo {
     /* spacing above/below */
     text-align: left;
     /* left-align the list */
+    width : 100%;
 }
 
 .services-list li {
-    margin-bottom: 0.75em;
+    margin-top:  0;
+   /* margin-bottom: 0.75em;
     /* space between items */
 }
 
@@ -148,7 +161,7 @@ html[dir="rtl"] .services-list {
 
 /* prevent content from being hidden behind footer */
 body {
-    padding-bottom: 3.5em;
+    padding-bottom: 0.2em;
     /* adjust based on footer height */
 }
 
@@ -159,23 +172,39 @@ body {
    Sections (all centered)
    ========================== */
 section {
-    position: relative;
+    position: absolute;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 5em 2em;
-    min-height: 100vh;
+  /*  padding: 1em 2em;
+    /*min-height: 200vh;*/
     box-sizing: border-box;
     color: #e0d77a;
-}
+    top: 0;
+  left: 0;
+  height: 130vh;
+  width: 100vw;
 
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  font-family: 'Comic Sans MS', cursive;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+.section.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
 
 section h2 {
     font-size: 2em;
-    margin-bottom: 0.5em;
+  /*  margin-bottom: 0.5em;*/
 }
 
 
@@ -187,28 +216,37 @@ section h2 {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Move content to the right */
+   /* align-items: flex-end; /* Move content to the right */ 
     justify-content: center;
-    text-align: right;
-    padding: 5em 2em;
-    min-height: 100vh;
+    text-align : center;
+    padding: 2em 2em;
+    /*min-height: 100vh; */
     box-sizing: border-box;
     color: #e0d77a;
     margin-top: 50px;
+    text-transform: uppercase;
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0 auto;
+    margin-top:  0;
+
+    
 }
 
 
 .about-text {
-    max-width: 600px;
+    max-width: 1200px;
     font-size: 1.5em;
     background: rgba(0, 0, 0, 0.6);
     padding: 2em;
     border-radius: 15px;
+    padding-top: 0;
+
+    margin-top:  0;
 }
 
 /* English (LTR): align About text to the right */
 html[dir="ltr"] .about-text {
-    text-align: left;
+    text-align: center;
 }
 
 /* Hebrew (RTL): align About text to the left */
@@ -220,7 +258,10 @@ html[dir="rtl"] .about-text {
 .about-text h1 {
     text-align: center;
     font-size: 2.50em;
-    margin-bottom: 0.5em;
+    /*margin-bottom: 0.5em;*/
+    margin-top:  0;
+    padding-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -233,7 +274,7 @@ html[dir="rtl"] .about-text {
 /* make labels full-width so text-align works */
 .contact-form label {
     display: block;
-    width: 100%;
+   width: 100%;
 }
 
 /* English (LTR): labels on the right */
@@ -250,7 +291,7 @@ html[dir="rtl"] .contact-form label {
 .contact-form textarea {
     width: 100%;
     padding: 0.8em;
-    margin-top: 0.5em;
+   /* margin-top: 0.5em; */
     border: none;
     border-radius: 8px;
     box-sizing: border-box;

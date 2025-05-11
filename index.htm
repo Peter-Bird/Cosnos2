@@ -7,12 +7,14 @@
     <title>COSNOS – Grow Beyond Stars</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/earth.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    
 
     <script defer src="language.js"></script>
 </head>
 
 <body>
-
 
     <nav class="navbar">
         <div class="logo">
@@ -26,14 +28,15 @@
             <a href="#about" data-key="navAbout">Home</a>
             <a href="#services" data-key="navServices">Services</a>
             <a href="#solutions" data-key="navSolutions">Solutions</a>
-            <a href="#resources" data-key="navResources">Resources</a>
+            <a href="Who we are" data-key="navWho">Who we are</a>
             <a href="#contact" data-key="navContact">Contact</a>
             <button id="lang-toggle" type="button" class="lang-btn" aria-label="Switch to Hebrew">🇮🇱</button>
         </div>
     </nav>
 
 
-    <section id="about" class="about-section">
+
+    <section id="about" class="section">
         <div class="about-text">
             <p data-key="aboutText">
                 <strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial
@@ -44,36 +47,34 @@
         </div>
     </section>
 
-    <section id="services" class="main-section">
+    <section id="services" class="section">
         <div class="about-text">
             <h2 data-key="servicesTitle">Our Services</h2>
             <ul class="services-list" data-key="servicesList">
-                <li>🎯 Striving for excellence in everything we do</li>
-                <li>🔍 Deep understanding and analysis of complex systems - from high-level architecture to the smallest
-                    details</li>
-                <li>💡 Integration of new technologies into existing systems</li>
-                <li>🧠 Out-of-the-box thinking</li>
-                <li>🤖 Utilization of AI as part of the work process</li>
+                <li>🎯 Consult Startups - in growth process </li>
+                <li>🤖 Develop AI solutions tailored to customer needs </li>
+                <li>💡 Analyze and Improve Software Architecture   </li>
+                <li>🧠 Personal guidance throughout the improvement process </li>
                 <li>🛡️ Analysis of vulnerabilities and provision of solutions</li>
             </ul>
         </div>
     </section>
 
-    <section id="solutions" class="main-section">
+    <section id="solutions" class="section">
         <div class="about-text">
             <h2 data-key="solutionsTitle">Solutions</h2>
             <p data-key="solutionsText">Case studies, frameworks, methodologies…</p>
         </div>
     </section>
 
-    <section id="resources" class="main-section">
+    <section id="resources" class="section">
         <div class="about-text">
             <h2 data-key="resourcesTitle">Resources</h2>
             <p data-key="resourcesText">Whitepapers, blog posts, webinars, etc.</p>
         </div>
     </section>
 
-    <section id="contact" class="main-section">
+    <section id="contact" class="section">
         <div class="about-text">
             <h2 data-key="contactTitle">Contact Us</h2>
             <p data-key="contactText">Contact form or your email / phone information.</p>
@@ -97,6 +98,30 @@
 
     <!-- Sticky Footer -->
     <footer class="footer" data-key="footerText">© 2024 COSNOS. All rights reserved.</footer>
-</body>
 
+
+
+</body>
+<script>
+let index = 0;
+const sections = document.querySelectorAll('.section');
+
+function showSection(i) {
+  sections.forEach((sec, idx) => {
+    sec.classList.toggle('active', idx === i);
+  });
+}
+
+function onScroll(e) {
+  if (e.deltaY > 0 && index < sections.length - 1) {
+    index++;
+  } else if (e.deltaY < 0 && index > 0) {
+    index--;
+  }
+  showSection(index);
+}
+
+document.addEventListener('wheel', onScroll, { passive: true });
+showSection(index);
+</script>
 </html>

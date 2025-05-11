@@ -3,7 +3,7 @@ const translations = {
         navAbout: "Home",
         navServices: "Services",
         navSolutions: "Solutions",
-        navResources: "Resources",
+        navWho: "Who we are",
         navContact: "Contact",
         aboutTitle: "Cosnos",
         aboutText: "<strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial expertise to support established startups. We offer executive consulting services, custom software solutions, and tailored AI integration based on each organization’s unique needs.",
@@ -20,12 +20,11 @@ const translations = {
         labelMessage: "Message",
         submitButton: "Send Message",
         servicesList: `
-        <li>🎯 Striving for excellence in everything we do</li>
-        <li>🔍 Deep understanding and analysis of complex systems - from high-level architecture to the smallest details</li>
-        <li>💡 Integration of new technologies into existing systems</li>
-        <li>🧠 Out-of-the-box thinking</li>
-        <li>🤖 Utilization of AI as part of the work process</li>
-        <li>🛡️ Analysis of vulnerabilities and provision of solutions</li>
+        <li>🎯 Consult Startups - in growth process </li>
+                <li>🤖 Develop AI solutions tailored to customer needs </li>
+                <li>💡 Analyze and Improve Software Architecture   </li>
+                <li>🧠 Personal guidance throughout the improvement process </li>
+                <li>🛡️ Analysis of vulnerabilities and provision of solutions</li>
       `,
         footerText: "© 2024 COSNOS. All rights reserved."
     },
@@ -33,7 +32,7 @@ const translations = {
         navAbout: "COSNOS",
         navServices: "השירותים שלנו",
         navSolutions: "פתרונות",
-        navResources: "משאבים",
+        navWho:"מי אנחנו",
         navContact: "צור קשר",
         aboutTitle: "אודות COSNOS",
         aboutText: "<strong>COSNOS</strong> היא חברת ייעוץ בוטיק שמשלבת מומחיות טכנולוגית וניהולית לתמיכה בסטארט-אפים בשלים. אנו מציעים שירותי ייעוץ ניהולי, פתרונות תוכנה בהתאמה אישית ואינטגרציית AI מותאמת לצרכי הארגון.",
