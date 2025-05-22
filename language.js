@@ -6,7 +6,7 @@ const translations = {
         navWho: "Who we are",
         navContact: "Contact",
         aboutTitle: "Cosnos",
-        aboutText: "<strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial expertise to support established startups. We offer executive and software architecture consulting services, , and tailored AI integration based on each organization’s unique needs.",
+        aboutText: "<strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial expertise to support established startups. We offer executive and software architecture consulting services, and tailored AI integration based on each organization’s unique needs.",
         servicesTitle: "Our Services",
         servicesText: "Detail your consulting and software offerings here.",
         solutionsTitle: "Solutions",
@@ -36,7 +36,7 @@ const translations = {
         navWho:"מי אנחנו",
         navContact: "צור קשר",
         aboutTitle: "אודות COSNOS",
-        aboutText: "<strong>COSNOS</strong> היא חברת ייעוץ שמשלבת מומחיות טכנולוגית וניהולית לתמיכה בסטארטאפים בשלים.<br>  אנו מציעים שירותי ייעוץ בניהול, ארכיטקטורת תוכנה, ומתודולוגיות פיתוח  בהתאמה אישית.  ושילוב כלי AI  מותאמים  לצרכי הארגון",       servicesTitle: "השירותים שלנו",
+        aboutText: "<strong>COSNOS</strong> היא חברת ייעוץ שמשלבת מומחיות טכנולוגית וניהולית לתמיכה בסטארטאפים בשלים.<br>  אנו מציעים שירותי ייעוץ בניהול, ארכיטקטורת תוכנה, ומתודולוגיות פיתוח  בהתאמה אישית. <br> ושילוב כלי AI  מותאמים  לצרכי הארגון",       servicesTitle: "השירותים שלנו",
         servicesText: "פרט כאן את שירותי הייעוץ והתוכנה שלך.",
         solutionsTitle: "פתרונות",
         solutionsText:"TAILY  היא מערכת AI המאפשרת ניתוח של מסמכים ודרישות ,<br> ומייצרת דרישות חדשות ומפרטי בדיקה",
@@ -49,10 +49,10 @@ const translations = {
         labelMessage: "הודעה",
         submitButton: "שלח הודעה",
         servicesList: `
-        <li>🎯ייעוץ לחברות סטארטאפ בתהליכי צמיחה </li>
-        <li> 🤖התאמת פתרונות AI לצרכי הארגון  </li>
-                <li>💡 ניתוח ושיפור ארכיטקטורת תוכנה </li>
-                <li>🧠לווי אישי בתהליך השיפור  והצמיחה </li>
+        <li>🎯 ייעוץ לחברות סטארטאפ בתהליכי צמיחה </li>
+        <li> 🤖 התאמת פתרונות AI לצרכי הארגון  </li>
+                <li>💡ניתוח ושיפור ארכיטקטורת תוכנה </li>
+                <li>🧠 לווי אישי בתהליך השיפור  והצמיחה </li>
                 <li>🛡️ ניתוח חולשות ופגיעויות , ומתן פתרונות</li>
       `,
         footerText: "כל הזכויות שמורות © 2024 COSNOS "
