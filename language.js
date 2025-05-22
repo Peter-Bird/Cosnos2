@@ -6,13 +6,13 @@ const translations = {
         navWho: "Who we are",
         navContact: "Contact",
         aboutTitle: "Cosnos",
-        aboutText: "<strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial expertise to support established startups. We offer executive consulting services, custom software solutions, and tailored AI integration based on each organization’s unique needs.",
+        aboutText: "<strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial expertise to support established startups. We offer executive and software architecture consulting services, , and tailored AI integration based on each organization’s unique needs.",
         servicesTitle: "Our Services",
         servicesText: "Detail your consulting and software offerings here.",
         solutionsTitle: "Solutions",
-        solutionsText: "Case studies, frameworks, methodologies…",
-        resourcesTitle: "Resources",
-        resourcesText: "Whitepapers, blog posts, webinars, etc.",
+        solutionsText: "T AI LY - TAILORED AI FOR    ANALYZING DOCUMENTS AND REQUIREMENTS ,<br> GENERATES REQUIRMENTS AND TEST CASES",
+        resourcesTitle: "Who we are",
+        resourcesText: "Sigal Tayar   , Julian Pollak .",
         contactTitle: "Contact Us",
         contactText: "Contact form or your email / phone information.",
         labelName: "Name",
@@ -29,19 +29,19 @@ const translations = {
         footerText: "© 2024 COSNOS. All rights reserved."
     },
     he: {
+
         navAbout: "COSNOS",
         navServices: "השירותים שלנו",
         navSolutions: "פתרונות",
         navWho:"מי אנחנו",
         navContact: "צור קשר",
         aboutTitle: "אודות COSNOS",
-        aboutText: "<strong>COSNOS</strong> היא חברת ייעוץ בוטיק שמשלבת מומחיות טכנולוגית וניהולית לתמיכה בסטארט-אפים בשלים. אנו מציעים שירותי ייעוץ ניהולי, פתרונות תוכנה בהתאמה אישית ואינטגרציית AI מותאמת לצרכי הארגון.",
-        servicesTitle: "השירותים שלנו",
+        aboutText: "<strong>COSNOS</strong> היא חברת ייעוץ שמשלבת מומחיות טכנולוגית וניהולית לתמיכה בסטארטאפים בשלים.<br>  אנו מציעים שירותי ייעוץ בניהול, ארכיטקטורת תוכנה, ומתודולוגיות פיתוח  בהתאמה אישית.  ושילוב כלי AI  מותאמים  לצרכי הארגון",       servicesTitle: "השירותים שלנו",
         servicesText: "פרט כאן את שירותי הייעוץ והתוכנה שלך.",
         solutionsTitle: "פתרונות",
-        solutionsText: "מחקרי מקרה, מסגרות עבודה, מתודולוגיות…",
-        resourcesTitle: "משאבים",
-        resourcesText: "מסמכים, פוסטים בבלוג, וובינרים וכו׳.",
+        solutionsText:"TAILY  היא מערכת AI המאפשרת ניתוח של מסמכים ודרישות ,<br> ומייצרת דרישות חדשות ומפרטי בדיקה",
+        resourcesTitle: "מי אנחנו",
+        resourcesText: "סיגל טייר , גוליאן פולק",
         contactTitle: "צור קשר",
         contactText: "טופס יצירת קשר או פרטי טלפון / מייל.",
         labelName: "שם",
@@ -49,12 +49,11 @@ const translations = {
         labelMessage: "הודעה",
         submitButton: "שלח הודעה",
         servicesList: `
-        <li>🎯 שאיפה למצוינות בכל דבר שאנו עושים</li>
-        <li>🔍 הבנה וניתוח מעמיק של מערכות מורכבות – מהארכיטקטורה ברמה גבוהה ועד לפרטים הקטנים ביותר</li>
-        <li>💡 הטמעת טכנולוגיות חדשות במערכות קיימות</li>
-        <li>🧠 חשיבה מחוץ לקופסה</li>
-        <li>🤖 שימוש בבינה מלאכותית כחלק מתהליך העבודה</li>
-        <li>🛡️ ניתוח פרצות אבטחה והצעת פתרונות</li>
+        <li>🎯ייעוץ לחברות סטארטאפ בתהליכי צמיחה </li>
+        <li> 🤖התאמת פתרונות AI לצרכי הארגון  </li>
+                <li>💡 ניתוח ושיפור ארכיטקטורת תוכנה </li>
+                <li>🧠לווי אישי בתהליך השיפור  והצמיחה </li>
+                <li>🛡️ ניתוח חולשות ופגיעויות , ומתן פתרונות</li>
       `,
         footerText: "כל הזכויות שמורות © 2024 COSNOS "
     }
