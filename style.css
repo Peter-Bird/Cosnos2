@@ -62,12 +62,14 @@ body {
 .navbar a {
     margin: 0 0.25em;
     padding: 0.4em 0.8em;
-    background: rgba(23, 58, 112, 0.7);
+    background: rgba(23, 56, 110, 0.7);
+    background: transparent;
     color: #e0d77a;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 50px;
+    /*font-weight: bold;*/
+    border-radius: 10px;
     transition: 0.3s;
+    font-size: 1.3em;
 }
 
 .navbar a:hover {
@@ -93,7 +95,8 @@ html[dir="rtl"] .logo {
 
 /*/* Slim down or “un-button” the language toggle */
 .lang-btn {
-    font-size: 1.1em;
+    font-size: 1.2em;
+
     /* make the emoji smaller */
     background: none;
     /* remove the pill background */
@@ -188,11 +191,11 @@ section {
   height: 130vh;
   width: 100vw;
 
-  align-items: center;
   opacity: 0;
   transition: opacity 0.5s ease;
   pointer-events: none;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Comic Sans MS', cursive, ;
+  font-size: medium;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -275,6 +278,8 @@ html[dir="rtl"] .about-text {
 .contact-form label {
     display: block;
    width: 100%;
+    font-size: 1.5em;
+   
 }
 
 /* English (LTR): labels on the right */
@@ -355,7 +360,8 @@ html[dir="rtl"] .contact-form textarea {
     .lang-btn {
         margin: 0.3em;
         padding: 0.5em 1em;
-        font-size: 0.9em;
+        font-size: 1.1em;
+        color : red;
     }
 
     .menu-btn {
@@ -423,4 +429,22 @@ html[dir="rtl"] .contact-form textarea {
     .about-text h1 {
         font-size: 1.75em;
     }
+
+    @font-face {
+  font-family: 'Shmulik';
+  src: url('/fonts/shmulik/shmulik.woff2') format('woff2'),
+       url('/fonts/shmulik/shmulik.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hebrew {
+  font-family: 'Shmulik', sans-serif;
+  direction: rtl;
+}
+
+/*html[lang="he"] .navbar a {
+    font-size: em; /* or 18px, 20px, etc. */
+/*}*/ 
+
 }
