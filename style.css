@@ -24,7 +24,7 @@ body {
 body {
     background: url('images/Cosnos_MainPage.png') no-repeat center top fixed;
     background-size: cover;
-    position: relative;
+   position: relative; 
 }
 #fullpage-wrapper {
     height: 100vh;
@@ -285,13 +285,6 @@ html[dir="rtl"] .about-text {
    Contact Form
    ========================== */
 
-
-
-
-
-
-
-
 /* align inputs to the right when in Hebrew (RTL) */
 html[dir="rtl"] .contact-form input,
 html[dir="rtl"] .contact-form textarea {
@@ -338,6 +331,14 @@ html[dir="rtl"] .contact-form textarea {
     margin-bottom: 1rem;
 }
 
+.barcode-img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 1em auto; /* center it with some space */
+}
+
+
 
 
 
@@ -354,7 +355,9 @@ html[dir="rtl"] .contact-form textarea {
 
 @media (max-width: 768px) {
     body {
-        padding-top: 70px;
+        padding-top: 30px;
+            font-size: 14px; /* reduce global size */
+
     }
 
     .navbar {
@@ -405,11 +408,15 @@ html[dir="rtl"] .contact-form textarea {
 
     .about-text {
         padding: 1.5em;
+          font-size: 0.8em;
     }
 
     .about-text h1 {
-        font-size: 2em;
+        font-size: 1em;
     }
+     .profile-card {
+    font-size: 0.6em;
+  }
 }
 
 @media (max-width: 480px) {
