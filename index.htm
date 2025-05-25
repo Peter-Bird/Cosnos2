@@ -30,7 +30,7 @@
             <a href="#about" data-key="navAbout">Home</a>
             <a href="#services" data-key="navServices">Services</a>
             <a href="#solutions" data-key="navSolutions">Solutions</a>
-            <a href="Who we are" data-key="navWho">Who we are</a>
+            <a href="#whowe" data-key="navWho">Who we are</a>
             <a href="#contact" data-key="navContact">Contact</a>
             <button id="lang-toggle" type="button" class="lang-btn" aria-label="Switch to Hebrew">🇮🇱</button>
         </div>
@@ -41,10 +41,10 @@
     <section id="about" class="section">
         <div class="about-text">
             <p data-key="aboutText">
-                <strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial
+              <strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial
                 expertise to support established startups. <br> 
-                We offer executive consulting services, custom software
-                solutions, and tailored AI integration based on each organization’s unique needs.
+               We offer executive consulting services, custom software
+               solutions, and tailored AI integration based on each organization’s unique needs.
             </p>
         </div>
     </section>
@@ -72,36 +72,49 @@
         </div>
     </section>
 
-    <section id="resources" class="section">
-        <div class="about-text">
-            <h2 data-key="resourcesTitle">Who we are </h2>
-            <p data-key="resourcesText">Sigal Tayar ,                    
-                 Julian Pollak</p>
-        </div>
-    </section>
 
-    <section id="contact" class="section">
-        <div class="about-text">
+    
 
-            <h2 data-key="contactTitle">Contact Us</h2>
-            <p data-key="contactText">Contact form or your email / phone information.</p>
-            <form class="contact-form" action="#" method="post">
-                <div class="form-group">
-                    <label for="name" data-key="labelName">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email" data-key="labelEmail">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message" data-key="labelMessage">Message</label>
-                    <textarea id="message" name="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn" data-key="submitButton">Send Message</button>
-            </form>
+
+    <section id="whowe" class="section">
+    <div class="about-text">
+        <h2 data-key="whoweTitle">Who we are</h2>
+        <div class="profile-container">
+            <div class="profile-card">
+                <img src="./images/sigal.png" alt="Sigal Tayar" class="profile-img">
+                 <ul data-key="profile1Text"><h3>Sigal Tayar</h3>
+                Experienced manager and software architect.<br>
+                Expertise in management and development methodologies.</ul>
+            </div>
+            <div class="profile-card">
+                <img src="./images/Julian.png" alt="Julian Pollak" class="profile-img">
+                <ul data-key="profile2Text"><ul <h3>Julian Pollak</h3>
+                Computer architect.<br>
+                Expertise in AI solutions for special needs.<ul>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
+ <section id="contact" class="section"> 
+       <div class="about-text">
+
+         <h2 data-key="contactTitle">Contact Us</h2>
+         <div class="profile-container">
+            <div class="profile-card">
+               <ul data-key="contact1Text"> <h3>Sigal Tayar</h3>
+                Sigal@Cos-nos.com <br>
+                tel : 0549575861</ul>
+            </div>
+            <div class="profile-card">
+    
+               <ul data-key="contact2Text"> <h3>Julian Pollak</h3>
+                Julian@Cos-nos.com<br>
+               tel : 0547491346<ul>
+            </div>
+       
+    </section> 
 
 
     
@@ -110,17 +123,22 @@
 
 
 
-</body>
+
+
+
+</html>
 <script>
 let index = 0;
 const sections = document.querySelectorAll('.section');
 
+// Show the section based on index
 function showSection(i) {
   sections.forEach((sec, idx) => {
     sec.classList.toggle('active', idx === i);
   });
 }
 
+// Scroll-based section navigation
 function onScroll(e) {
   if (e.deltaY > 0 && index < sections.length - 1) {
     index++;
@@ -130,7 +148,21 @@ function onScroll(e) {
   showSection(index);
 }
 
+// Link-based navigation
+document.querySelectorAll('.nav-items a').forEach((link) => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); // prevent jump to anchor
+    const targetId = this.getAttribute('href').substring(1); // get the section id
+    const targetIndex = Array.from(sections).findIndex(
+      (sec) => sec.id === targetId
+    );
+    if (targetIndex !== -1) {
+      index = targetIndex;
+      showSection(index);
+    }
+  });
+});
+
 document.addEventListener('wheel', onScroll, { passive: true });
-showSection(index);
+showSection(index); // Show first section on load
 </script>
-</html>
