@@ -22,7 +22,7 @@ body {
 }
 
 body {
-    background: url('images/Cosnos_MainPage.png') no-repeat center top fixed;
+    background: url('images/CosnosBackground.png') no-repeat center top fixed;
     background-size: cover;
    position: relative; 
 }
@@ -193,12 +193,12 @@ section {
     justify-content: center;
     text-align: center;
   /*  padding: 1em 2em;
-    /*min-height: 200vh;*/
+    min-height: 200vh;
     box-sizing: border-box;
     color: #e0d77a;
     top: 0;
-  left: 0;
-  height: 130vh;
+  left: 0; */
+  height: 110vh;
   width: 100vw;
 
   opacity: 0;
@@ -232,11 +232,11 @@ section h2 {
    /* align-items: flex-end; /* Move content to the right */ 
     justify-content: center;
     text-align : center;
-    padding: 2em 2em;
+  /*  padding: 2em 2em;
     /*min-height: 100vh; */
     box-sizing: border-box;
     color: #e0d77a;
-    margin-top: 20px;
+   /* margin-top: 20px;*/
     text-transform: uppercase;
     font-family: 'Comic Sans MS', cursive;
   /*  margin: 0 auto;*/
@@ -339,6 +339,17 @@ html[dir="rtl"] .contact-form textarea {
 }
 
 
+.main-page-logo {
+ /* width: 1500;
+  height: 200;*/
+  position: relative;
+
+ /* position-area: initial;
+  /*display: block; */
+ margin: 1em auto; /* center it with some space */
+}
+
+
 
 
 
@@ -356,7 +367,7 @@ html[dir="rtl"] .contact-form textarea {
 @media (max-width: 768px) {
     body {
         padding-top: 30px;
-            font-size: 14px; /* reduce global size */
+            font-size: 10px; /* reduce global size */
 
     }
 
@@ -402,20 +413,20 @@ html[dir="rtl"] .contact-form textarea {
         height: 50px;
     }
 
-    section {
-        padding: 3em 1.5em;
+.main-page-logo {
+       height: 80px;
     }
 
     .about-text {
         padding: 1.5em;
-          font-size: 0.8em;
+          font-size: 0.7em;
     }
 
     .about-text h1 {
-        font-size: 1em;
+        font-size: 0.8em;
     }
      .profile-card {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
 }
 
