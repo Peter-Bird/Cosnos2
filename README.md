@@ -1,7 +1,3 @@
-Great, I see you’ve uploaded your project files (`index.html`, `language.js`, `style.css`). Here’s a **README.md** you can use for your project. This README explains your site structure, tech stack, and gives instructions for setup. You can of course tweak this as needed!
-
----
-
 # COSNOS – Grow Beyond Stars
 
 Welcome to the COSNOS landing page and business site!
@@ -88,6 +84,3 @@ Contact info and bios are available in the Contact section of the site.
 **© 2025 COSNOS. All rights reserved.**
 
 ---
-
-Let me know if you want a more technical README, want to include screenshots, or if you want to add deployment instructions for a specific platform!
-
