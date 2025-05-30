@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSNOS – Grow Beyond Stars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/earth.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+     <link rel="shortcut taily-icon" href="./images/taily_icon" type="image/x-icon">
+
+    <script defer src="language.js"></script> 
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" alt="COSNOS Logo">
+        </div>
+
+        <!-- Hamburger toggle, initially hidden on desktop -->
+        <button id="menu-toggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+
+        <div class="nav-items">
+            <a href="#about" data-key="navAbout">Home</a>
+            <a href="#services" data-key="navServices">Services</a>
+            <a href="#solutions" data-key="navSolutions">Solutions</a>
+            <a href="#whowe" data-key="navWho">Who we are</a>
+            <a href="#contact" data-key="navContact">Contact</a>
+            <button id="lang-toggle" type="button" class="lang-btn" aria-label="Switch to Hebrew">🇮🇱</button>
+        </div>
+    </nav>
+
+
+
+    <section id="about" class="section">
+        <div class="about-text">
+            <p data-key="aboutText">
+              
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="about-text">
+            <h2 data-key="servicesTitle">Our Services</h2>
+            <ul class="services-list" data-key="servicesList">
+                <li>🎯 Consult Startups - in growth process </li>
+                <li>🤖 Develop AI solutions tailored to customer needs </li>
+                <li>💡 Analyze and Improve Software Architecture   </li>
+                <li>🧠 Personal guidance throughout the improvement process </li>
+                <li>🛡️ Analysis of vulnerabilities and provision of solutions</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="solutions" class="section">
+        <div class="about-text">
+            <h2 data-key="solutionsTitle">Solutions</h2>
+            <div class="logo">
+            <img src="./images/taily-logo.png" alt="taily logo">
+        </div>
+            <p data-key="solutionsText">T AI LY - TAILORED AI FOR    ANALYZING DOCUMENTS AND REQUIREMENTS ,<br> GENERATES REQUIRMENTS AND TEST CASES"
+        </div>
+    </section>
+
+
+    
+
+
+    <section id="whowe" class="section">
+    <div class="about-text">
+        <h2 data-key="whoweTitle">Who we are</h2>
+        <div class="profile-container">
+            <div class="profile-card">
+                <img src="./images/sigal.png" alt="Sigal Tayar" class="profile-img">
+                 <ul data-key="profile1Text"><h3>Sigal Tayar</h3>
+                Experienced manager and software architect.<br>
+                Expertise in management and development methodologies.</ul>
+            </div>
+            <div class="profile-card">
+                <img src="./images/Julian.png" alt="Julian Pollak" class="profile-img">
+                <ul data-key="profile2Text"> <h3>Julian Pollak</h3>
+                Computer architect.<br>
+                Expertise in AI solutions for special needs.<ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+ <section id="contact" class="section"> 
+       <div class="about-text">
+
+         <h2 data-key="contactTitle">Contact Us</h2>
+         <div class="profile-container">
+            <div class="profile-card">
+               <ul data-key="contact1Text"> <h3>Sigal Tayar</h3>
+                Sigal@Cos-nos.com <br>
+                tel : 0549575861</ul>
+            </div>
+            <div class="profile-card">
+    
+               <ul data-key="contact2Text"> <h3>Julian Pollak</h3>
+                Julian@Cos-nos.com<br>
+               tel : 0547491346<ul>
+            </div>
+
+           <a href="https://cos-nos.com" target="_blank">
+  <img src="/images/homepage_barcode.png" alt="Homepage QR Code" />
+</a>
+</a>
+       
+    </section> 
+
+
+    
+    <!-- Sticky Footer -->
+    <footer class="footer" data-key="footerText">© 2025 COSNOS. All rights reserved.</footer>
+
+
+
+
+
+
+</html>
+<script>
+let index = 0;
+const sections = document.querySelectorAll('.section');
+
+// Show the section based on index
+function showSection(i) {
+  sections.forEach((sec, idx) => {
+    sec.classList.toggle('active', idx === i);
+  });
+}
+
+// Scroll-based section navigation
+function onScroll(e) {
+  if (e.deltaY > 0 && index < sections.length - 1) {
+    index++;
+  } else if (e.deltaY < 0 && index > 0) {
+    index--;
+  }
+  showSection(index);
+}
+
+// Link-based navigation
+document.querySelectorAll('.nav-items a').forEach((link) => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); // prevent jump to anchor
+    const targetId = this.getAttribute('href').substring(1); // get the section id
+    const targetIndex = Array.from(sections).findIndex(
+      (sec) => sec.id === targetId
+    );
+    if (targetIndex !== -1) {
+      index = targetIndex;
+      showSection(index);
+    }
+  });
+});
+
+document.addEventListener('wheel', onScroll, { passive: true });
+showSection(index); // Show first section on load
+</script>
+
+

@@ -1,96 +1,78 @@
 const translations = {
-    en: {
-        navAbout: "Home",
-        navServices: "Services",
-        navSolutions: "Solutions",
-        navWho: "Who we are",
-        navContact: "Contact",
-        aboutTitle: "Cosnos",
-        aboutText: "<strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial expertise to support established startups. We offer executive and software architecture consulting services, and tailored AI integration based on each organization’s unique needs.",
-        servicesTitle: "Our Services",
-        servicesText: "Detail your consulting and software offerings here.",
-        solutionsTitle: "Solutions",
-        solutionsText: "T AI LY - TAILORED AI FOR    ANALYZING DOCUMENTS AND REQUIREMENTS ,<br> GENERATES REQUIRMENTS AND TEST CASES",
-        whoweTitle: "Who we are",
-        whoweText: "Sigal Tayar   , Julian Pollak .",
-        contactTitle: "Contact Us",
-        
-       profile1Text : "Sigal Tayar experienced manager",
-              profile2Text : "Julian Pollak experienced manager",
-       contact1Text : "Sigal Tayar tel : 0549575861",
-contact2Text : "Julian pollak tel : 0549575861",
-
-        servicesList: `
-        <li>🎯 Consult Startups - in growth process </li>
-                <li>🤖 Develop AI solutions tailored to customer needs </li>
-                <li>💡 Analyze and Improve Software Architecture   </li>
-                <li>🧠 Personal guidance throughout the improvement process </li>
-                <li>🛡️ Analysis of vulnerabilities and provision of solutions</li>  `,
-        footerText: "© 2025 COSNOS. All rights reserved."
-    },
-    he: {
-
-        navAbout: "COSNOS",
-        navServices: "השירותים שלנו",
-        navSolutions: "פתרונות",
-        navWho:"מי אנחנו",
-        navContact: "צור קשר",
-        aboutTitle: "אודות COSNOS",
-        aboutText: "<strong>COSNOS</strong> היא חברת ייעוץ שמשלבת מומחיות טכנולוגית וניהולית לתמיכה בסטארטאפים בשלים.<br>  אנו מציעים שירותי ייעוץ בניהול, ארכיטקטורת תוכנה, ומתודולוגיות פיתוח  בהתאמה אישית. <br> ושילוב כלי AI  מותאמים  לצרכי הארגון",       servicesTitle: "השירותים שלנו",
-        servicesText: "פרט כאן את שירותי הייעוץ והתוכנה שלך.",
-        solutionsTitle: "פתרונות",
-        solutionsText:"TAILY  היא מערכת AI המאפשרת ניתוח של מסמכים ודרישות ,<br> ומייצרת דרישות חדשות ומפרטי בדיקה",
-        whoweTitle: "מי אנחנו",
-        whoweText: "סיגל טייר , גוליאן פולק",
-        contactTitle: "צור קשר",
-        contactText:"סיגל טל :   0549575861.",
-        profile1Text : "סיגל טייר - מנהלת מנוסה ", 
- profile2Text : "ג'וליאן פולק - ארכיקט מחשבים ", 
- contact1Text : "סיגל טייר טל  : 0549575861",
-contact2Text : "ג'וליאן פולק טל  0549575861",
-        servicesList: `
-        <li>🎯 ייעוץ לחברות סטארטאפ בתהליכי צמיחה </li>
-        <li> 🤖 התאמת פתרונות AI לצרכי הארגון  </li>
-                <li>💡ניתוח ושיפור ארכיטקטורת תוכנה </li>
-                <li>🧠 לווי אישי בתהליך השיפור  והצמיחה </li>
-                <li>🛡️ ניתוח חולשות ופגיעויות , ומתן פתרונות</li>
-      `,
-        footerText: "כל הזכויות שמורות © 2025 COSNOS "
-    }
+  en: {
+    navAbout: "Home",
+    navServices: "Services",
+    navSolutions: "Solutions",
+    navWho: "Who we are",
+    navContact: "Contact",
+    aboutText: `<strong>COSNOS</strong> is a boutique consulting firm that combines deep technological and managerial
+      expertise to support established startups.<br>We offer executive consulting services, custom software
+      solutions, and tailored AI integration based on each organization’s unique needs.`,
+    servicesTitle: "Our Services",
+    servicesList: `
+      <li>🎯 Consult Startups - in growth process</li>
+      <li>🤖 Develop AI solutions tailored to customer needs</li>
+      <li>💡 Analyze and Improve Software Architecture</li>
+      <li>🧠 Personal guidance throughout the improvement process</li>
+      <li>🛡️ Analysis of vulnerabilities and provision of solutions</li>
+    `,
+    solutionsTitle: "Solutions",
+    solutionsText: `T AI LY - TAILORED AI FOR ANALYZING DOCUMENTS AND REQUIREMENTS,<br>GENERATES REQUIREMENTS AND TEST CASES`,
+    whoweTitle: "Who we are",
+    profile1Text: `<h3>Sigal Tayar</h3>Experienced manager <br> software architect<br>Expertise in management and development methodologies.`,
+    profile2Text: `<h3>Julian Pollak</h3>Computer architect.<br>Expertise in AI solutions <br>tailored to your needs.`,
+    contactTitle: "Contact Us",
+    contact1Text: `<h3>Sigal Tayar</h3>Sigal@Cos-nos.com<br>tel : 0549575861`,
+    contact2Text: `<h3>Julian Pollak</h3>Julian@Cos-nos.com<br>tel : 0547491346`,
+    footerText: "© 2025 COSNOS. All rights reserved.",
+  },
+  he: {
+    navAbout: "בית",
+    navServices: "שירותים",
+    navSolutions: "פתרונות",
+    navWho: "מי אנחנו",
+    navContact: "צור קשר",
+    aboutText: `<strong>Cosnos</strong> היא חברת ייעוץ בוטיק שמשלבת מומחיות טכנולוגית וניהולית עמוקה לתמיכה בסטארטאפים. <br> אנו מציעים ייעוץ ניהולי, פתרונות תוכנה מותאמים, ושילוב AI מותאם לצרכים הארגוניים.`,
+    servicesTitle: "השירותים שלנו",
+    servicesList: `
+      <li>🎯 ייעוץ לסטארטאפים בתהליך צמיחה</li>
+      <li>🤖 פיתוח פתרונות AI מותאמים אישית</li>
+      <li>💡 ניתוח ושיפור ארכיטקטורת תוכנה</li>
+      <li>🧠 ליווי אישי לאורך כל תהליך השיפור</li>
+      <li>🛡️ ניתוח פגיעויות ומתן פתרונות</li>
+    `,
+    solutionsTitle: "פתרונות",
+    solutionsText: `TAILY – בינה מלאכותית מותאמת אישית לניתוח מסמכים ודרישות<br>מחוללת דרישות ומקרי בדיקה`,
+    whoweTitle: "מי אנחנו",
+    profile1Text: `<h3>סיגל טייר</h3>מנהלת מנוסה <br> וארכיטקטית תוכנה.<br>מומחית במתודולוגיות ניהול ופיתוח.`,
+    profile2Text: `<h3>ג'וליאן פולק</h3>ארכיטקט מחשבים.<br>מומחה לפתרונות AI <br> מותאמים לצרכי הארגון `,
+    contactTitle: "צור קשר",
+    contact1Text: `<h3>סיגל טייר</h3>Sigal@Cos-nos.com<br>טל : 0549575861`,
+    contact2Text: `<h3>ג'וליאן פולק</h3>Julian@Cos-nos.com<br>טל : 0547491346`,
+    footerText: "© 2025 קוסנוס. כל הזכויות שמורות.",
+  }
 };
 
-function switchLang(lang) {
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === 'he' ? 'rtl' : 'ltr';
-    document.querySelectorAll('[data-key]').forEach(el => {
-        const key = el.getAttribute('data-key');
-        if (translations[lang][key]) {
-            el.innerHTML = translations[lang][key];
-        }
-    });
+let currentLang = 'en';
+
+function updateText() {
+  document.querySelectorAll('[data-key]').forEach((el) => {
+    const key = el.getAttribute('data-key');
+    const content = translations[currentLang][key];
+    if (content) el.innerHTML = content;
+  });
+
+  document.documentElement.lang = currentLang;
+  document.documentElement.dir = currentLang === 'he' ? 'rtl' : 'ltr';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.getElementById('lang-toggle');
-    toggle.addEventListener('click', () => {
-        const newLang = document.documentElement.lang === 'en' ? 'he' : 'en';
-        switchLang(newLang);
-        toggle.textContent = newLang === 'en' ?  '🇮🇱' : '🇬🇧';
-        toggle.setAttribute(
-            'aria-label',
-            newLang === 'en'
-                ? 'Switch to Hebrew'
-                : 'Switch to English'
-        );
-    });
-});
+  updateText();
 
-document.addEventListener('DOMContentLoaded', () => {
-    const nav    = document.querySelector('.navbar');
-    const toggle = document.getElementById('menu-toggle');
-    
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-    });
+  const langBtn = document.getElementById('lang-toggle');
+  langBtn.addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'he' : 'en';
+    updateText();
+    langBtn.textContent = currentLang === 'en' ? '🇮🇱' : 'EN';
   });
-  
+});
